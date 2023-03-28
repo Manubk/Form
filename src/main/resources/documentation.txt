@@ -1,0 +1,21 @@
+Forms
+-------
+1) Login 
+2) All Response Details
+3) Profile
+4) input 
+
+admin
+---------
+1) username
+2) pass
+3) Persons (one to many)
+
+Person input 
+--------
+1) Name -Fn-Mn-Ln (one to one)
+2) dob 
+3) Batch
+4) Qualification BE/BTEch 
+5) image
+6) address -area - city - country - pincode (one to one)
