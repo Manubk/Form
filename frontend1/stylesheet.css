@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+:root{
+
+    /* color */
+    --background-color: #ffffff;
+    --primary: #6200EE;
+    --primary-variant: #3700b3;
+    --secondary: #03dac6;
+    --secondary-variant: #018786;
+    --error: #b00020;
+    --on-surface: #000000;
+
+    /* font-size */
+    --font-size: 16px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+
+.container{
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+form p{
+    font-size: 2rem;
+    font-weight: 200px;
+}
+
+.input{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.input label{
+    position: absolute;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    top: 20px;
+    left: 15px;
+    transition: .3s;
+   color: b8b8b8;
+}
+
+
+.input input{
+   padding: 10px;
+   margin-bottom: 5px;
+   outline: none;
+   
+   
+}
+
+.input input:focus + label,
+.input input:valid + label
+{
+    top: 4px;
+    font-size: .7rem;
+    background-color: var(--background-color);
+    color: var(--primary-variant);
+}
+
+.input input:focus,
+.input input:valid{
+    border: 1px solid var(--primary-variant);
+}
+
+button{
+    display: block;
+    font-size: inherit;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-variant);
+    color: var(--background-color);
+}
+
+button:hover{
+    color: var(--background-color);
+    background-color: var(--primary);
+}
